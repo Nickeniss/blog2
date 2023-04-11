@@ -1,6 +1,6 @@
 const Scene = require('../model/scene')
 const asyncHandler = require('express-async-handler')
-const getScene = asyncHandler(async (req, res) => {
+const getScene = asyncHandler(async (req, res, next) => {
     const { storyState } = req.params;
   
     //validation
@@ -9,14 +9,14 @@ const getScene = asyncHandler(async (req, res) => {
       return;
     }
   
-    const scene = await Scene.find({ storyState });
+    const scene = await Scene.find({ "storyState":storyState });
   
     if (scene.length === 0) {
       res.status(404).json({ error: 'No scenes found with the specified story state.' });
       return;
     }
-  
-    res.status(200).json(scene);
+
+    res.status(200).json({scene});
   });
   
   
@@ -30,7 +30,7 @@ const getScene = asyncHandler(async (req, res) => {
       return;
     }
   
-    const newScene = new Storyboard({
+    const newScene = new Scene({
       title,
       text,
       storyState,

@@ -4,7 +4,7 @@ const getChoices = asyncHandler(async (req, res) => {
     const { currentStoryState } = req.params;
 
     try {
-        const choices = await Choice.find({ currentStoryState });
+        const choices = await Choice.find({ "currentStoryState":currentStoryState });
 
         if (choices.length === 0) {
             res.status(404).json({ error: 'No choices found with the specified current story state.' });
@@ -46,12 +46,11 @@ const setChoice = asyncHandler(async (req, res) => {
     }
 
     const newChoices = await Choice.insertMany(choiceData);
-
     res.status(201).json(newChoices);
 });
 
 module.exports = {
-    getChoice,
+    getChoices,
     setChoice,
 
 }

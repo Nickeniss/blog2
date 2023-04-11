@@ -11,6 +11,10 @@ const connectDB = require('./config')
 const {errorHandler} = require('./middleware/errorHandler')
 connectDB();
 
+
+//allows any ip address to access our express server
+const cors = require('cors');
+app.use(cors());
 //Encoding
 app.use(express.json());
 app.use(urlencoded({extended: false}));
@@ -19,10 +23,10 @@ app.use(urlencoded({extended: false}));
 app.use(errorHandler);
 
 //Scene routes
-app.use('/api/product', require('./routes/sceneRoutes'));
+app.use('/api/scene', require('./routes/sceneRoutes'));
 
 //Choice routes 
-app.use('/api/account', require('./routes/choiceRoutes.js'));
+app.use('/api/choice', require('./routes/choiceRoutes.js'));
 
 //Routes
 //Just to test server is running

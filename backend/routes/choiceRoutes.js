@@ -1,10 +1,10 @@
 const express = require('express'); 
 const router = express.Router();
-const { getChoice, setChoice, } = require('../controller/choiceController');
+const { getChoices, setChoice, } = require('../controller/choiceController');
 
 //error for authorization when testing getReview route. Help!
-router.route('/').get(getChoice).post(setChoice);
-
+router.route('/').post(setChoice);
+router.route('/:currentStoryState').get(getChoices)
 
 
 module.exports = router;
