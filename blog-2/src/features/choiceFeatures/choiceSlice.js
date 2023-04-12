@@ -29,6 +29,7 @@ export const choicesSlice = createSlice({
       })
       .addCase(fetchChoicesForStory.fulfilled, (state, action) => {
         state.status = 'succeeded';
+       
         state.choices = action.payload;
       })
       .addCase(fetchChoicesForStory.rejected, (state, action) => {

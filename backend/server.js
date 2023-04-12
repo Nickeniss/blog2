@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+
 const express = require('express');
 const app = express();
 const { urlencoded } = require('express');
@@ -26,7 +26,7 @@ app.use(errorHandler);
 app.use('/api/scene', require('./routes/sceneRoutes'));
 
 //Choice routes 
-app.use('/api/choice', require('./routes/choiceRoutes.js'));
+app.use('/api/choices', require('./routes/choiceRoutes.js'));
 
 //Routes
 //Just to test server is running

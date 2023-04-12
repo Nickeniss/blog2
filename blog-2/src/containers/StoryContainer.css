@@ -1,0 +1,95 @@
+.storyTextDiv {
+    border: 2px solid #5e2605;
+    /* Dark brown border */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9e4b7;
+    /* Light yellow background */
+    font-family: 'Old Standard TT', serif;
+    /* Font with a medieval feel */
+    font-size: 32px;
+    line-height: 1.5;
+    margin-bottom: 2vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vw;
+}
+
+.headerDiv {
+    border: 2px solid #5e2605;
+    /* Dark brown border */
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9e4b7;
+    /* Light yellow background */
+    font-family: 'Old Standard TT', serif;
+    /* Font with a medieval feel */
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 2vw;
+    margin-left: 40vw;
+    margin-right: 40vw;
+    margin-top: 10vw;
+}
+
+
+storyTextDiv:before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #5e2605;
+    /* Dark brown triangle */
+    transform: rotate(45deg) translate(-8px, -8px);
+    position: absolute;
+}
+
+storyTextDiv:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #f9e4b7;
+    /* Light yellow square */
+    transform: rotate(45deg) translate(-8px, -8px);
+    position: absolute;
+    border: 2px solid #5e2605;
+    /* Dark brown border */
+    border-top: none;
+    border-right: none;
+}
+
+button {
+    background-color: #8B4513; /* dark brown */
+    border: none;
+    color: #FFF; /* white */
+    padding: 12px 24px;
+    font-size: 24px;
+    font-family: "Old English Text MT", serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0px 0px #000; /* add a drop shadow */
+    margin: 2vw; /* add 5vw of space between buttons */
+   
+  }
+  
+  button:hover {
+    background-color: #CD853F; /* lighter brown on hover */
+  }
+  
+  .buttonDiv {
+    display: flex; /* use flexbox to center the contents */
+    justify-content: center; /* horizontally center the contents */
+    align-items: center; /* vertically center the contents */
+  }
+  
+
+body {
+    background-image: url('D:\react\practice\blog2\blog-2\src\wall_1.png');
+    background-repeat: repeat;
+    background-size: 64px 64px;
+}

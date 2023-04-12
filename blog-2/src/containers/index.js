@@ -1,4 +1,4 @@
-import StoryContainer from "./StoryContainer"
+import StoryContainer from './StoryConainter'
 
 export{
     StoryContainer

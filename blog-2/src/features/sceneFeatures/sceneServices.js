@@ -1,9 +1,16 @@
 import axios from 'axios';
-const API_URL = '/api/scene/'
-async function updateScene(storyState) {
+const API_URL = '/scene/'
+
+
+const apiClient = axios.create({
+  baseURL: 'http://localhost:8001/api'
+});
+
+const updateScene = async (storyState) => {
   try {
-    console.log(storyState)
-    const response = await axios.get(API_URL + storyState);
+    
+    const response = await apiClient.get(API_URL + storyState);
+    
     return response.data;
   } catch (error) {
     console.error(error);

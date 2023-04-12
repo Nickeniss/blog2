@@ -16,7 +16,7 @@ const getScene = asyncHandler(async (req, res, next) => {
       return;
     }
 
-    res.status(200).json({scene});
+    res.status(200).json(scene);
   });
   
   
