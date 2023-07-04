@@ -1,5 +1,6 @@
-import StoryContainer from './StoryConainter'
-
+import StoryContainer from './StoryConainter';
+import MainMenu from './mainMenu/MainMenu';
 export{
-    StoryContainer
+    StoryContainer,
+    MainMenu
 }

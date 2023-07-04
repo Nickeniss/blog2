@@ -1,4 +1,4 @@
-import ChoiceButton from "./Choicebuttton";
+import ChoiceButton from "./choiceButton/Choicebuttton";
 
 export{
     ChoiceButton

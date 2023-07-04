@@ -1,6 +1,25 @@
 .App {
   text-align: center;
 }
+.windowDiv {
+  border: 2px solid #5e2605;
+  /* Dark brown border */
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9e4b7;
+  /* Light yellow background */
+  font-family: 'Old Standard TT', serif;
+  /* Font with a medieval feel */
+  font-size: 32px;
+  line-height: 1.5;
+  margin-bottom: 2vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .App-logo {
   height: 40vmin;

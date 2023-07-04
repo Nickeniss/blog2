@@ -37,8 +37,8 @@
 storyTextDiv:before {
     content: "";
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 8vw;
+    height: 8vw;
     background-color: #5e2605;
     /* Dark brown triangle */
     transform: rotate(45deg) translate(-8px, -8px);
@@ -48,8 +48,8 @@ storyTextDiv:before {
 storyTextDiv:after {
     content: "";
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 8vw;
+    height: 8vw;
     background-color: #f9e4b7;
     /* Light yellow square */
     transform: rotate(45deg) translate(-8px, -8px);
